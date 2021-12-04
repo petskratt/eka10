@@ -1,93 +1,129 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
-    <link href="bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <title>Odin!</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <div class="hero-bg">
+  <style>
+    .hero-bg {
+      background: url(img/hero-bg.jpg) no-repeat center bottom;
+      background-size: cover;
+    }
+
+    .navbar-nav {
+      font-size: 20px;
+    }
+
+    .nav-item {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+      color: black;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show>.nav-link {
+      border-bottom: #D6342E solid 2px;
+    }
+  </style>
+
+
+  <title>Odin!</title>
+</head>
+
+<body>
+
+  <div class="hero-bg">
 
     <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col">
-                <p>Kogemused alates 1995</p>
-            </div>
-            <div class="col">
-                <p>Kõige sõbralikumad sõiduõpetajad</p>
-            </div>
-            <div class="col">
-                <p>Lõppkoolitus meilt</p>
-            </div>
+      <div class="row text-center pt-3 text-white">
+        <div class="col">
+          <p>Kogemused alates 1995</p>
         </div>
+        <div class="col">
+          <p>Kõige sõbralikumad sõiduõpetajad</p>
+        </div>
+        <div class="col">
+          <p>Lõppkoolitus meilt</p>
+        </div>
+      </div>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Odium</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Avaleht</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Koolitused</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Miks Odium?</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <button class="btn btn-outline-primary" type="submit">e-odium</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/odium_logo.svg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Avaleht</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Koolitused</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Miks Odium?</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-primary" type="submit">e-odium</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
 
 
-      <div class="container">
-          <div class="row">
-              <div class="col-6">
-                  <h1>Õpetame Sind autoga sõitma?</h1>
-                  <p>Korraldame AM, A, A1, A2, B, BE, C, CE- ja D-kat. mootorsõidukijuhi kursuseid, samuti ametikoolitusi veoauto- ja taksojuhtidele
-                    ning esmaabi koolitusi eesti, vene ja inglise keeles.</p>
+    <div class="container my-5 pb-5">
+      <div class="row text-white">
+        <div class="col-6">
+          <h1>Õpetame Sind autoga sõitma?</h1>
+          <p>Korraldame AM, A, A1, A2, B, BE, C, CE- ja D-kat. mootorsõidukijuhi kursuseid, samuti ametikoolitusi
+            veoauto- ja taksojuhtidele
+            ning esmaabi koolitusi eesti, vene ja inglise keeles.</p>
 
-              </div>
-          </div>
-          <div class="row">
-            <div class="col">
-                <button type="button" class="btn btn-primary">A kategooria</button>
-            </div>   
-            <div class="col">
-                <button type="button" class="btn btn-primary">B kategooria</button>
-            </div>      
-            <div class="col">
-                <button type="button" class="btn btn-primary">C kategooria</button>
-            </div>      
-            <div class="col">
-                <button type="button" class="btn btn-primary">D kategooria</button>
-            </div>             
         </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary">A kategooria</button>
         </div>
-
-
+        <div class="col">
+          <button type="button" class="btn btn-primary">B kategooria</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary">C kategooria</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary">D kategooria</button>
+        </div>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  </body>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
