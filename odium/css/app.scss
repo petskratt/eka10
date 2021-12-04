@@ -1,0 +1,67 @@
+$primary: #D6342E;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+
+@import "bootstrap";
+
+.hero-bg-city {
+  background: url(../img/hero-bg.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+
+.hero-bg-graph {
+  background: url(../img/kaldus.svg) no-repeat center bottom;
+  background-size: cover;
+}
+
+
+.navbar-nav {
+  font-size: 20px;
+}
+
+.nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  border-bottom: #D6342E solid 2px;
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(214, 52, 46, .15) !important;
+}
+
+.categories .btn {
+
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+
+.categories {
+
+    .btn.cat-a {
+        background-image: url(../img/bike.svg);
+      } 
+      
+      .btn.cat-b {
+        background-image: url(../img/car.svg);
+      } 
+
+     
+      .btn.cat-c {
+        background-image: url(../img/truck.svg);
+      } 
+
+
+    }
